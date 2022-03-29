@@ -8,6 +8,7 @@ module.exports = {
     `google`,
     `prettier`,
     `plugin:react/jsx-runtime`,
+    `next`,
   ],
   parser: `@typescript-eslint/parser`,
   parserOptions: {
@@ -32,10 +33,5 @@ module.exports = {
         argsIgnorePattern: `^_`,
       },
     ],
-  },
-  settings: {
-    react: {
-      version: `latest`,
-    },
   },
 };
