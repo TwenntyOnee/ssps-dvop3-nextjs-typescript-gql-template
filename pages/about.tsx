@@ -1,5 +1,10 @@
 const About = () => {
-  return <div>Enter</div>;
+  return (
+    <div>
+      Enter
+      <p>Test</p>
+    </div>
+  );
 };
 
 export default About;
