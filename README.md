@@ -1,6 +1,8 @@
-# NextJS + Typescript template
+# NextJS + Typescript + Apollo Client + GraphQL template
 
 Template with preconfigure NextJS with Typescript support.
+
+Apollo Client provider with preconfigured SSG, SSR, ISR or CSR. Cached in Apollo Cached and gql.
 
 Linting with ESLint and TS support and formating by Prettier.
 
