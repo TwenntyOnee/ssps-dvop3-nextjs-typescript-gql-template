@@ -4,6 +4,8 @@ Template with preconfigure NextJS with Typescript support.
 
 Linting with ESLint and TS support and formating by Prettier.
 
+Code inspiration by [**JarrodWatts Code Like Google**](https://github.com/jarrodwatts/code-like-google)
+
 ## Scripts
 
 - `yarn dev` - dev server\
