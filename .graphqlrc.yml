@@ -1,0 +1,2 @@
+schema: "https://headlesswoo.wolfpix.cz"
+documents: "**/*.{graphql,js,ts,jsx,tsx}"
