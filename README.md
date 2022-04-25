@@ -10,10 +10,10 @@ Code inspiration by [**JarrodWatts Code Like Google**](https://github.com/jarrod
 
 ## Scripts
 
-- `yarn dev` - dev server\
-- `yarn build` - build next
-- `yarn start` - start next server
-- `yarn lint` - lint all files by ESLint
+- 'yarn dev' - dev server\
+- 'yarn build' - build next
+- 'yarn start' - start next server
+- 'yarn lint' - lint all files by ESLint
 
 ## Linting
 
@@ -24,18 +24,18 @@ Code inspiration by [**JarrodWatts Code Like Google**](https://github.com/jarrod
 
 ## Technologies we are using:
 
-- ESLint ([`.eslintrc.js`](./.eslintrc.js))
-- Prettier ([`.prettierrc`](./.prettierrc))
-- Typescript ([`tsconfig.json`](./tsconfig.json))
-- `eslint-config-prettier` (helps eslint and prettier get along)
+- ESLint (['.eslintrc.js'](./.eslintrc.js))
+- Prettier (['.prettierrc'](./.prettierrc))
+- Typescript (['tsconfig.json'](./tsconfig.json))
+- 'eslint-config-prettier' (helps eslint and prettier get along)
 
 ## Auto-formatting on save:
 
-Inside `/.vscode/settings.json` we set prettier as the default formatter, and also set `editor.codeActionsOnSave` to run:
+Inside '/.vscode/settings.json' we set prettier as the default formatter, and also set 'editor.codeActionsOnSave' to run:
 
-- **Lint:** `"source.fixAll.eslint"`
-- **Format:** `"source.fixAll.format"`
+- **Lint:** '"source.fixAll.eslint"'
+- **Format:** '"source.fixAll.format"'
 
 ## Checking standards pre-commit:
 
-Using [husky](https://www.npmjs.com/package/husky) we can check all of our style standards to make sure our git commits are up to par. Check those checks out at [`.husky/pre-commit`](.husky/pre-commit)
+Using [husky](https://www.npmjs.com/package/husky) we can check all of our style standards to make sure our git commits are up to par. Check those checks out at ['.husky/pre-commit'](.husky/pre-commit)

@@ -10,6 +10,7 @@ query getPosts {
         databaseId
         title
         slug
+        authorId
       }
     }
   }

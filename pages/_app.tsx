@@ -9,7 +9,7 @@ import "../styles/globals.css";
  * @param {any} pageProps
  * @return {AppProps} Component
  */
-function MyApp({ Component, pageProps }: AppContext & AppInitialProps) {
+const App = ({ Component, pageProps }: AppContext & AppInitialProps) => {
   const apolloClient = useApollo(pageProps);
 
   return (
@@ -17,6 +17,6 @@ function MyApp({ Component, pageProps }: AppContext & AppInitialProps) {
       <Component {...pageProps} />
     </ApolloProvider>
   );
-}
+};
 
-export default MyApp;
+export default App;

@@ -1,5 +1,5 @@
 overwrite: true
-schema: "https://headlesswoo.wolfpix.cz/graphql"
+schema: "https://presloviny-dev.vrkota.name/graphql"
 documents: "lib/graphql/**/*.graphql"
 generates:
   generated/graphql-types.tsx:
