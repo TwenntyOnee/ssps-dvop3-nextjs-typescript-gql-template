@@ -1,8 +1,6 @@
-# NextJS + Typescript + Apollo Client + GraphQL template
+# NextJS + Typescript + GraphQL template
 
 Template with preconfigure NextJS with Typescript support.
-
-Apollo Client provider with preconfigured SSG, SSR, ISR or CSR. Cached in Apollo Cached and gql.
 
 Linting with ESLint and TS support and formating by Prettier.
 
@@ -28,14 +26,3 @@ Code inspiration by [**JarrodWatts Code Like Google**](https://github.com/jarrod
 - Prettier (['.prettierrc'](./.prettierrc))
 - Typescript (['tsconfig.json'](./tsconfig.json))
 - 'eslint-config-prettier' (helps eslint and prettier get along)
-
-## Auto-formatting on save:
-
-Inside '/.vscode/settings.json' we set prettier as the default formatter, and also set 'editor.codeActionsOnSave' to run:
-
-- **Lint:** '"source.fixAll.eslint"'
-- **Format:** '"source.fixAll.format"'
-
-## Checking standards pre-commit:
-
-Using [husky](https://www.npmjs.com/package/husky) we can check all of our style standards to make sure our git commits are up to par. Check those checks out at ['.husky/pre-commit'](.husky/pre-commit)

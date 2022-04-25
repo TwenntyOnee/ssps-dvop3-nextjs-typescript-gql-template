@@ -4,6 +4,7 @@ import {
   useGetCategoriesQuery,
   useGetPostsQuery,
 } from "../generated/graphql-types";
+
 /**
  *
  * @return {NextPage} Homepage
