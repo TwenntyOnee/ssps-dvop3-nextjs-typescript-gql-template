@@ -7680,6 +7680,22 @@ export type GetPostsQuery = {
   __typename?: "RootQuery";
   posts?: {
     __typename?: "RootQueryToPostConnection";
+    nodes?: Array<{
+      __typename?: "Post";
+      id: string;
+      slug?: string | null;
+      title?: string | null;
+      date?: string | null;
+    } | null> | null;
+  } | null;
+};
+
+export type GetPostsQueryVariables = Exact<{ [key: string]: never }>;
+
+export type GetPostsQuery = {
+  __typename?: "RootQuery";
+  posts?: {
+    __typename?: "RootQueryToPostConnection";
     pageInfo?: {
       __typename?: "WPPageInfo";
       hasNextPage: boolean;
@@ -7759,6 +7775,63 @@ export type GetCategoriesLazyQueryHookResult = ReturnType<
 export type GetCategoriesQueryResult = Apollo.QueryResult<
   GetCategoriesQuery,
   GetCategoriesQueryVariables
+>;
+export const GetPostsDocument = gql`
+  query GetPosts {
+    posts {
+      nodes {
+        id
+        slug
+        title
+        date
+      }
+    }
+  }
+`;
+
+/**
+ * __useGetPostsQuery__
+ *
+ * To run a query within a React component, call `useGetPostsQuery` and pass it any options that fit your needs.
+ * When your component renders, `useGetPostsQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useGetPostsQuery({
+ *   variables: {
+ *   },
+ * });
+ */
+export function useGetPostsQuery(
+  baseOptions?: Apollo.QueryHookOptions<GetPostsQuery, GetPostsQueryVariables>
+) {
+  const options = { ...defaultOptions, ...baseOptions };
+  return Apollo.useQuery<GetPostsQuery, GetPostsQueryVariables>(
+    GetPostsDocument,
+    options
+  );
+}
+export function useGetPostsLazyQuery(
+  baseOptions?: Apollo.LazyQueryHookOptions<
+    GetPostsQuery,
+    GetPostsQueryVariables
+  >
+) {
+  const options = { ...defaultOptions, ...baseOptions };
+  return Apollo.useLazyQuery<GetPostsQuery, GetPostsQueryVariables>(
+    GetPostsDocument,
+    options
+  );
+}
+export type GetPostsQueryHookResult = ReturnType<typeof useGetPostsQuery>;
+export type GetPostsLazyQueryHookResult = ReturnType<
+  typeof useGetPostsLazyQuery
+>;
+export type GetPostsQueryResult = Apollo.QueryResult<
+  GetPostsQuery,
+  GetPostsQueryVariables
 >;
 export const GetPostsDocument = gql`
   query getPosts {

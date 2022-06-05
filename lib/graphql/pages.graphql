@@ -1,0 +1,10 @@
+query GetPosts {
+  posts {
+    nodes {
+      id
+      slug
+      title
+      date
+    }
+  }
+}
